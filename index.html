@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpk Lines</title>
+</head>
+<style>
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    p[id="warning"] {
+        color: red;
+        font-weight: bolder;
+    }
+</style>
+<body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1KGS06KNM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J1KGS06KNM');
+    </script>
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> window.start.init({Palette:"palette2",Mode:"banner bottom",Theme:"classic",Message:"This website use Cookies ;) For more information click",LinkText:"Here",ButtonText:"Accept",Location:"https://kersozone.pl/cookies/about-cookies.html",Time:"5",})</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3682132999386607"
+     crossorigin="anonymous"></script>
+    <h1>Mpk Lines</h1>
+    <p>The simple Bus-time check</p> <p id="warning">Works Only With Bus stopes located in Łódź, city in Poland</p>
+    <input type="number" placeholder="example: 123" id="number">
+    <input type="button" value="Enter" onclick="check()" >
+    <footer>
+        Copyright kersozone 2020-2023 <br>
+        MADE IN POLAND
+    </footer>
+    
+</body>
+<script>
+    var busstop;
+    
+    function check() {
+        busstop = document.getElementById('number').value;
+
+        window.location = "http://rozklady.lodz.pl/Home/TimeTableReal?busStopNum=" + busstop;
+    }
+</script>
+</html>
